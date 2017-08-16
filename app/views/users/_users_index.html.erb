@@ -1,0 +1,60 @@
+<div class="row">
+<div class="col-lg-11">
+<div class="ibox float-e-margins">
+<div class="ibox-title">
+    <div class="ibox-tools">
+        <a class="collapse-link">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="fa fa-wrench"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-user">
+            <li>
+                <a href="#">Config option 1</a>
+            </li>
+            <li>
+                <a href="#">Config option 2</a>
+            </li>
+        </ul>
+        <a class="close-link">
+            <i class="fa fa-times"></i>
+        </a>
+    </div>
+</div>
+
+<div class="ibox-content">
+<table class="table table-striped table-bordered table-hover dataTables-example1">
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Email</th>
+            <th>Office</th>
+            <th>Department</th>
+            <th>Division</th>
+            <th>Function</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @users.each do |user| %>
+            <tr>
+                <td><%= link_to user.name, user %></td>
+                <td><%= user.title %></td>
+                <td><%= user.email %></td>
+                <td><%= link_to user.office_name, user.office unless user.office_name.nil? %></td>
+                <td><%= link_to user.department_name, user.department unless user.department_name.nil? %></td>
+                <td><%= link_to user.division_name, user.division unless user.division_name.nil? %></td>
+                <td><%= link_to user.function_name, user.function unless user.function_name.nil? %></td>
+            </tr>
+        <% end %>
+    </tbody>
+
+</table>
+</div>
+</div>
+</div>
+</div>
+

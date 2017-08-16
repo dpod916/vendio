@@ -1,0 +1,4 @@
+class AgreementAssignment < Task
+	
+  
+end

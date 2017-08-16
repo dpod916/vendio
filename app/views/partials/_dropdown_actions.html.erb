@@ -1,0 +1,8 @@
+<% if assignment.accepted.nil? %>
+    <% if assignment.direction == 'item.to.user' %>
+        <%= render partial: "partials/requestee", locals: {assignment: assignment}  %>
+    <% else %>
+        <%= render partial: "partials/requestee", locals: {assignment: assignment}  %>
+    <% end %>
+<% end %>
+<%= render partial: "partials/participant_actions", locals: {assignment: assignment} if assignment.accepted %>

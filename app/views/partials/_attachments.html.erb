@@ -1,0 +1,26 @@
+<div class="ibox">
+    <div class="ibox-content">
+        <h3>Attachments</h3>
+        <ul class="list-unstyled file-list">
+            <% item.attachments.each do |attachment| %>
+              <%= render partial: "partials/attachment.html.erb", locals: {item: item, attachment: attachment} %>
+            <% end %>
+        </ul>
+        <%= render partial: "attachments/form.html.erb", locals: {item: item} if (can? :update, item) || current_user == item %>
+    </div>
+</div>
+
+<% content_for :javascript do %>
+   <script type="text/javascript">
+
+       $(document).ready(function(){
+
+            $('.delete_attachment').bind('ajax:success', function() {
+                    $(this).closest('li').fadeOut()
+            })
+
+       })
+
+
+   </script>
+<% end %>

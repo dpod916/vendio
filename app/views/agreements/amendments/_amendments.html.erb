@@ -1,0 +1,15 @@
+
+<%= render partial: "extensions/extensions", locals: {owner: owner, extensions: @owner.extensions, extension_title: "Extensions"} %>
+<%= render partial: "amendments/sorted_amendments", locals: {owner: owner, amendments: @amendments.where(:status_id => [4, 5]), amendment_title: "Historical Amendments"} %>
+
+<% if @owner.authenticated_users.include?(current_user.id) %>
+    <a data-toggle="modal" class="btn btn-primary pull-right" href="#modal-form-amendment">New Amendment</a>
+    <div id="modal-form-amendment" class="modal fade" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-body">
+        <%= render partial: "amendments/form", locals: {agreement: owner, owner: owner} %>
+    </div>
+    </div>
+    </div>
+<% end %>
+ 

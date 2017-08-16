@@ -1,0 +1,94 @@
+
+<%= render partial: "partials/breadcrumb", locals: {item: item} %>
+
+
+<div class="wrapper wrapper-content">
+<div class="row animated fadeInRight">
+    <div class="col-md-4">
+        <%= render partial: "partials/profile_details", locals: {item: item} %>
+        <%= render partial: "partials/assignments", locals: {item: item} if item.user_or_group? %>
+        <%= render partial: "partials/group", locals: {group: item.followers, group_name: 'Followers'} %>
+        <%= render partial: "partials/group", locals: {group: item.all_following, group_name: 'Following'} if item.user_or_group? %>
+        <%= render partial: "partials/group", locals: {group: item.users, group_name: 'Employees'} if item.user_or_group? %>
+        <%= render partial: "partials/attachments", locals: {item: item} %>
+    </div>
+    <div class="col-md-8">
+        <%= render partial: "partials/activities_by_date", locals: {activities: @activities} %>
+    </div>
+
+</div>
+</div>
+
+
+<%= render partial: "partials/custom_js"  %>
+
+<% content_for :javascript do %>
+
+
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+  /* Activating Best In Place */
+  jQuery(".best_in_place").best_in_place()
+})
+
+ $(document).ready(function() {
+    $('.summernote').summernote()
+  })
+
+$("#new_comment").hide()
+
+
+$("#follow_buttons").html('<%= escape_javascript(render :partial => "partials/follow_buttons", :locals => {:item => item}) %>')
+
+$("#unfollow").click(function(){
+    var request = new XMLHttpRequest()
+    var url = $("#unfollow")[0].getAttribute("href")
+    request.open('POST', url, true)
+    $("#follow_buttons").html('<%= escape_javascript(render :partial => "partials/follow_buttons", :locals => {:item => item}) %>')
+})
+
+$("#follow").click(function(){
+    var request = new XMLHttpRequest()
+    var url = $("#follow")[0].getAttribute("href")
+    request.open('POST', url, true)
+    $("#follow_buttons").html('<%= escape_javascript(render :partial => "partials/follow_buttons", :locals => {:item => item}) %>')
+})
+
+$('.pagination').hide()
+
+$(function() {
+
+    $("span.pie").peity("pie", {
+        fill: ['#1ab394', '#d7d7d7', '#ffffff']
+    })
+
+    $(".line").peity("line", {
+        fill: '#1ab394',
+        stroke: '#169c81',
+    })
+
+    $(".bar").peity("bar", {
+        fill: ["#1ab394", "#d7d7d7"]
+    })
+
+
+})
+
+$(function() {
+
+    $("#sparkline1").sparkline([34, 43, 43, 35, 44, 32, 44, 48], {
+        type: 'line',
+        width: '100%',
+        height: '50',
+        lineColor: '#1ab394',
+        fillColor: "transparent"
+    })
+
+
+})
+
+</script>
+
+<% end %>

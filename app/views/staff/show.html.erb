@@ -1,0 +1,18 @@
+<%= javascript_include_tag 'users.coffee' %> 
+<div class="row wrapper border-bottom white-bg page-heading">
+    <%= render partial: "partials/top_details", locals: {owner: @user} %>
+</div>
+
+<div class="row">
+    <%= render partial: "users/details", locals: {owner: @user} %>
+</div>
+
+<div class="row m-t-sm">
+    <%= render partial: "users/tabs", locals: {owner: @user} %>
+</div>
+
+</div>
+    <%= render partial: "users/side_details", locals: {owner: @user} %>
+</div>
+
+<%= render partial: "partials/custom_js", locals: {owner: @user} %>

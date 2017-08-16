@@ -1,0 +1,21 @@
+<% if activity.trackable %>
+<% keys = activity.key.split('.') %>
+    <% if lookup_context.template_exists?(keys[1], "public_activity/#{keys[0]}", true) && lookup_context.template_exists?(keys[1], "public_activity/#{activity.trackable_type.downcase}", true) %>
+        <% if activity.trackable_type == "Entry" %>
+             <%= render partial: "entries/entry", locals: {entry: activity.trackable, publisher: activity.recipient, keys: keys} %>
+        <% else %>
+            <%= render partial: "public_activity/activities/feed", locals: {activity: activity, owner: activity.owner, keys: keys} %>
+        <% end %>
+    <% end %>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+

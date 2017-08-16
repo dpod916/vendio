@@ -1,0 +1,14 @@
+
+<div class="social-comment">
+    <a href="" class="pull-left">
+        <img alt="image" src="<%= avatar_url(comment.user) %>" %>">
+    </a>
+    <div class="media-body">
+        <%= link_to comment.user_name,  comment.user %>
+        <%= comment.body %>
+        <br/>
+        <a href="#" class="small"><i class="fa fa-thumbs-up"></i> 26 Like this!</a> -
+        <small class="text-muted"><%= time_ago_in_words(comment.created_at)  %>ago </small>
+    </div>
+</div>
+

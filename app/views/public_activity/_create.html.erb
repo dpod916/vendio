@@ -1,0 +1,11 @@
+<div class="feed-element">
+    <a href="#" class="pull-left">
+        <img alt="image" class="img-circle" src="<%= avatar_url(activity.owner) %>">
+    </a>
+    <div class="media-body ">
+        <small class="pull-right"><%= time_ago_in_words(activity.created_at)  %> ago</small>
+        <strong><%= link_to activity.owner.name, activity.owner %></strong> added the task <%= link_to activity.trackable_title, activity.trackable %>. <br>
+        <small class="text-muted"><%= activity.created_at.to_date.to_formatted_s :long_ordinal %></small>
+
+    </div>
+</div>

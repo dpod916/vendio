@@ -1,0 +1,47 @@
+
+
+<div class="col-lg-5">
+    <%= render partial: "partials/profile_details", locals: {item: item} %>
+    <% if item.followers_count > 0 %>
+      <%= render partial: "partials/group", locals: {group: item.followers.paginate(:page => params[:page], :per_page => 14), group_name: 'Followers'} %>
+    <% end %>
+    <% if item.tasks.count > 0 %>
+        <%= render partial: "partials/group", locals: {group: item.tasks.paginate(:page => params[:page], :per_page => 14),                                                      group_name: 'Tasks'} %>
+    <% end %>
+    <% if item.issues.count > 0 %>
+        <%= render partial: "partials/group", locals: {group: item.issues.paginate(:page => params[:page], :per_page => 14), group_name: 'Issues'} %>
+    <% end %>
+  <div class="row"></div>
+    <div id="participants-list">
+        <div class="ibox-content">
+            <h5>Participants</h5>
+            <ul class="todo-list m-t ui-sortable">
+                <% item.user_assignments.each do |assignment| %>
+                  <%= render partial: "partials/participant", locals: {assignment: assignment, item: item}  %>
+                <% end %>
+            </ul>
+
+            <% if (can? :manage, item) %>
+
+                <div class="btn-group">
+
+                    <%= render partial: "assignments/admin_buttons", locals: {item: item } %>
+
+                </div>
+
+            <% end %>
+
+          </div>
+
+      </div>
+
+    <div class="row"></div>
+    <div id="attachments-list">
+      <%= render partial: "partials/attachments", locals: {item: item} %>
+    </div>
+
+</div>
+
+<div class="col-md-7">
+    <%= render partial: "partials/activities_by_date", locals: {activities: @activities} %>
+</div>

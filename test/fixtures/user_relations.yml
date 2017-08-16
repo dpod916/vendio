@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: one
+  profit_center: one
+  office: one
+  function: one
+  segment: one
+  business_unit: one
+  department: one
+  division: one
+  manager_id: 1
+  user: one
+
+two:
+  company: two
+  profit_center: two
+  office: two
+  function: two
+  segment: two
+  business_unit: two
+  department: two
+  division: two
+  manager_id: 1
+  user: two

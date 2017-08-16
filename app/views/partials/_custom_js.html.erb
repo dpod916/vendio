@@ -1,0 +1,25 @@
+<% content_for :javascript do %>
+   <script type="text/javascript">
+
+$("button").click(function() {
+    var parent_id = this.id
+    var comment_box_id = "#input_" + parent_id
+    var comment_box = $(comment_box_id)
+    var comment_val = comment_box.last().val()
+    $("textarea").last().val( comment_val )
+    $("#comment_parent_id").last().val( parent_id )
+})
+
+
+$(function() {
+
+    // Add slimscroll to element
+     $('.scroll_content').slimscroll({
+        height: '150px'
+    })
+
+})
+
+
+</script>
+<% end %>

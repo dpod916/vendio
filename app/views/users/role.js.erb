@@ -1,0 +1,2 @@
+$("<%= element %>").html("<%= escape_javascript(render(partial: "partials/roles", locals: {item: item, user: user})) %>")
+$("#participants-list").html("<%= escape_javascript(render(partial: "partials/participant_list", locals: {assignment: assignment, item: item})) %>")

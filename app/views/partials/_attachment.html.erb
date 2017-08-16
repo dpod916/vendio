@@ -1,0 +1,7 @@
+<li>
+    <a href="">
+        <i class="<%="fa #{attachment_icon(attachment)}"%>"></i>
+        <%= link_to truncate(attachment.file_file_name, length: 40), attachment_url(attachment), target: :_blank %>
+        <%= link_to 'Delete', attachment, method: :delete, data: { confirm: 'Are you sure?' }, :remote => true, :class => 'delete_attachment pull-right' if (can? :update, item) || current_user == item %>
+    </a>
+</li>

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  priority_name: MyString
+  priority_type: MyString
+
+two:
+  priority_name: MyString
+  priority_type: MyString

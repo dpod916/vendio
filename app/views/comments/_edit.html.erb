@@ -1,0 +1,11 @@
+
+<%= simple_form_for([Comment.find(comment)], html: { class: 'form-horrizontal'}) do |f| %>
+ <div class="row">
+    <div class="col-md-9">
+		<%= f.input :body, label: false %>
+  	</div>
+  	<div class="col-md-3">
+  		<%= f.button :submit, "Submit" %>
+  	</div>
+ </div>
+<% end %>

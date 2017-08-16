@@ -1,0 +1,3 @@
+class Negotiation < Task
+
+end

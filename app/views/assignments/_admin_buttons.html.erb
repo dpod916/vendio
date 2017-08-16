@@ -1,0 +1,149 @@
+<div id="admin-buttons">
+  <div id="owners_button" class="btn btn-xs btn-outline btn-primary">Owner(s)</div>
+    <div id="owners_form">
+        <%= render partial: "assignments/owners", locals: {item: item } %>
+    </div>
+
+   <div id="admins_button" class="btn btn-xs btn-outline btn-primary">Admin(s)</div>
+    <div id="admins_form">
+        <%= render partial: "assignments/admins", locals: {item: item } %>
+    </div>
+
+    <div id="participants_button" class="btn btn-xs btn-outline btn-primary">Participant(s)</div>
+    <div id="participants_form">
+        <%= render partial: "assignments/participants", locals: {item: item } %>
+    </div>
+
+   <div id="contacts_button" class="btn btn-xs btn-outline btn-primary">Contact(s)</div>
+    <div id="contacts_form">
+        <%= render partial: "assignments/contacts", locals: {item: item } %>
+    </div>
+
+    <% if item.reviewable? %>
+        <div id="reviewers_button" class="btn btn-xs btn-outline btn-primary">Reviewer(s)</div>
+        <div id="reviewers_form">
+            <%= render partial: "assignments/reviewers", locals: {item: item } %>
+        </div>
+    <% end %>
+
+    <% if item.class.name == 'Issue' || item.issues.count > 0 %>
+        <div id="subjects_button" class="btn btn-xs btn-outline btn-primary">Subject(s)</div>
+        <div id="subjects_form">
+            <%= render partial: "assignments/subjects", locals: {item: item } %>
+        </div>
+    <% end %>
+</div>
+
+<% content_for :javascript do %>
+
+
+<script type="text/javascript">
+
+
+$("#subjects_form").hide();
+
+$("#subjects_button").click(function() {
+
+            $("#subjects_form").show();
+            $("#subjects_button").hide();
+
+            $("[id$=subject_tokens]").tokenInput('/users.json', {
+                prePopulate: $(this).data("pre"),
+                theme: 'facebook',
+                preventDuplicates: true
+            });
+
+});
+
+$("#reviewers_form").hide();
+
+$("#reviewers_button").click(function() {
+
+            $("#reviewers_form").show();
+            $("#reviewers_button").hide();
+
+            $("[id$=reviewer_tokens]").tokenInput('/users.json', {
+                prePopulate: $(this).data("pre"),
+                theme: 'facebook',
+                preventDuplicates: true
+            });
+
+});
+
+$("#contacts_form").hide();
+
+$("#contacts_button").click(function() {
+
+            $("#contacts_form").show();
+            $("#contacts_button").hide();
+
+            $("[id$=contact_tokens]").tokenInput('/users.json', {
+                prePopulate: $(this).data("pre"),
+                theme: 'facebook',
+                preventDuplicates: true
+            });
+
+});
+
+$("#participants_form").hide();
+
+$("#participants_button").click(function() {
+
+            $("#participants_form").show();
+            $("#participants_button").hide();
+
+            $("[id$=participant_tokens]").tokenInput('/users.json', {
+                prePopulate: $(this).data("pre"),
+                theme: 'facebook',
+                preventDuplicates: true
+            });
+
+});
+
+$("#owners_form").hide();
+
+$("#owners_button").click(function() {
+
+            $("#owners_form").show();
+            $("#owners_button").hide();
+
+            $("[id$=owner_tokens]").tokenInput('/users.json', {
+                prePopulate: $(this).data("pre"),
+                theme: 'facebook',
+                preventDuplicates: true
+            });
+
+});
+
+$("#admins_form").hide();
+
+
+$("#admins_button").click(function() {
+
+            $("#admins_form").show();
+            $("#admins_button").hide();
+
+            $("[id$=admin_tokens]").tokenInput('/users.json', {
+                prePopulate: $(this).data("pre"),
+                theme: 'facebook',
+                preventDuplicates: true
+            });
+
+});
+
+
+$('*[id*=s_button]').click(function() {
+
+            $('*[id*=s_button]').each(function() {
+                $(this).hide();
+            });
+
+});
+
+
+
+
+</script>
+
+<% end %>
+

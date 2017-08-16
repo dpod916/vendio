@@ -1,0 +1,222 @@
+$("<%= element %>").html("<%= escape_javascript(render(partial: "partials/roles", locals: {assignment: assignment})) %>")
+$("#participants-list").html("<%= escape_javascript(render(partial: "partials/participant_list", locals: {item: item})) %>")
+$("#admin-buttons").html("<%= escape_javascript(render(partial: "assignments/admin_buttons", locals: {item: item})) %>")
+$("#subjects_form").hide()
+$("#reviewers_form").hide()
+$("#contacts_form").hide()
+$("#participants_form").hide()
+$("#owners_form").hide()
+$("#admins_form").hide()
+
+$("#subjects_form").hide()
+
+$("#subjects_button").click(function() {
+
+            $("#subjects_form").show()
+            $("#subjects_button").hide()
+
+            $("[id$=subject_tokens]").tokenInput('/users.json', {
+                prePopulate: $(this).data("pre"),
+                theme: 'facebook',
+                preventDuplicates: true
+            })
+
+})
+
+$("#reviewers_form").hide()
+
+$("#reviewers_button").click(function() {
+
+            $("#reviewers_form").show()
+            $("#reviewers_button").hide()
+
+            $("[id$=reviewer_tokens]").tokenInput('/users.json', {
+                prePopulate: $(this).data("pre"),
+                theme: 'facebook',
+                preventDuplicates: true
+            })
+
+})
+
+$("#contacts_form").hide()
+
+$("#contacts_button").click(function() {
+
+            $("#contacts_form").show()
+            $("#contacts_button").hide()
+
+            $("[id$=contact_tokens]").tokenInput('/users.json', {
+                prePopulate: $(this).data("pre"),
+                theme: 'facebook',
+                preventDuplicates: true
+            })
+
+})
+
+$("#participants_form").hide()
+
+$("#participants_button").click(function() {
+
+            $("#participants_form").show()
+            $("#participants_button").hide()
+
+            $("[id$=participant_tokens]").tokenInput('/users.json', {
+                prePopulate: $(this).data("pre"),
+                theme: 'facebook',
+                preventDuplicates: true
+            })
+
+})
+
+$("#owners_form").hide()
+
+$("#owners_button").click(function() {
+
+            $("#owners_form").show()
+            $("#owners_button").hide()
+
+            $("[id$=owner_tokens]").tokenInput('/users.json', {
+                prePopulate: $(this).data("pre"),
+                theme: 'facebook',
+                preventDuplicates: true
+            })
+
+})
+
+$("#admins_form").hide()
+
+
+$("#admins_button").click(function() {
+
+            $("#admins_form").show()
+            $("#admins_button").hide()
+
+            $("[id$=admin_tokens]").tokenInput('/users.json', {
+                prePopulate: $(this).data("pre"),
+                theme: 'facebook',
+                preventDuplicates: true
+            })
+
+})
+
+
+$('*[id*=s_button]').click(function() {
+
+            $('*[id*=s_button]').each(function() {
+                $(this).hide()
+            })
+
+})
+
+$("#admin-cancel-button").click(function() {
+
+            $('*[id*=_form]').each(function() {
+                $(this).hide()
+            })
+
+            $('*[id*=s_button]').each(function() {
+                $(this).show()
+            })
+
+            $('.token-input-list-facebook').remove()
+
+
+
+})
+
+$("#contact-cancel-button").click(function() {
+
+            $('*[id*=_form]').each(function() {
+                $(this).hide()
+            })
+
+            $('*[id*=s_button]').each(function() {
+                $(this).show()
+            })
+
+            $('.token-input-list-facebook').remove()
+
+
+
+})
+
+$("#owner-cancel-button").click(function() {
+
+            $('*[id*=_form]').each(function() {
+                $(this).hide()
+            })
+
+            $('*[id*=s_button]').each(function() {
+                $(this).show()
+            })
+
+            $('.token-input-list-facebook').remove()
+
+
+
+})
+
+$("#participant-cancel-button").click(function() {
+
+            $('*[id*=_form]').each(function() {
+                $(this).hide()
+            })
+
+            $('*[id*=s_button]').each(function() {
+                $(this).show()
+            })
+
+            $('.token-input-list-facebook').remove()
+
+
+
+})
+
+
+$("#reviewer-cancel-button").click(function() {
+
+            $('*[id*=_form]').each(function() {
+                $(this).hide()
+            })
+
+            $('*[id*=s_button]').each(function() {
+                $(this).show()
+            })
+
+            $('.token-input-list-facebook').remove()
+
+
+
+})
+
+$("#subject-cancel-button").click(function() {
+
+            $('*[id*=_form]').each(function() {
+                $(this).hide()
+            })
+
+            $('*[id*=s_button]').each(function() {
+                $(this).show()
+            })
+
+            $('.token-input-list-facebook').remove()
+
+
+
+})
+
+$("#viewer-cancel-button").click(function() {
+
+            $('*[id*=_form]').each(function() {
+                $(this).hide()
+            })
+
+            $('*[id*=s_button]').each(function() {
+                $(this).show()
+            })
+
+            $('.token-input-list-facebook').remove()
+
+
+
+})

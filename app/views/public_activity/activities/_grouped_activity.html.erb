@@ -1,0 +1,32 @@
+<div class="stream">
+    <div class="stream-badge">
+        <i class="fa fa-pencil"></i>
+    </div>
+    <div class="stream-panel">
+        <div class="stream-info">
+            <a href="#">
+                <img src="<%= image_path("#{avatar_url(activity.owner)}") %>" />
+                <span><%= link_to activity.owner.name, activity.owner if activity.owner %></span>
+                <span class="date"><%= time_ago_in_words(activity.created_at)  %>ago </span>
+            </a>
+        </div>
+        <% if activity.trackable %>
+            <% if activity.trackable.is_matter? %>
+                <%= render partial: 'public_activity/default', locals: {activity: activity} %>.
+                    <% if activity.children_on_page? %>
+                        <% activity.trackable.children_on_page.each do |child_activity| %>
+                            <div class="stream-panel">
+                                <% child_activity_type = child_activity.key.split('.')[1] %>
+                                <% class_folder = child_activity.class.name.underscore.lowercase.pluralize %>
+                                <%= render partial: "#{class_folder(child_activity)}/#{child_activity_type}", locals: {activity: child_activity} %>.
+                            </div>
+                        <% end %>
+                    <% end %>
+            <% else %>
+                <% unless activity.parents_on_page? %>
+                    <%= render_activity activity %>.
+                <% end %> 
+            <% end %>
+        <% end %> 
+    </div>
+</div>

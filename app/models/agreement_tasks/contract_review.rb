@@ -1,0 +1,3 @@
+class ContractReview < Task
+
+end

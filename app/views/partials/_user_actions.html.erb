@@ -1,0 +1,11 @@
+<li>
+  <a id="follow_user">
+  <% unless current_user.following?(user) %>
+    <%= link_to "Follow", {:controller => :follows, :action => 'create', :item => user.dash_param }, :method => :post,  :remote => true, :data => user.dash_param, :id => 'follow', :class => "btn-sm btn-block btn-primary", :href => "/follow/#{user.dash_param}"   unless current_user.following?(user)%>
+  <% else %>
+    <%= link_to "Unfollow", {:controller => :follows, :action => 'destroy', :item => user.dash_param }, :method => :delete,  :remote => true, :data => user.dash_param, :id => 'unfollow', :class => "btn-sm btn-block btn-danger", :href => "/unfollow/#{user.dash_param}" if current_user.following?(user)  %>
+  <% end %>
+  </a>
+</li>
+
+

@@ -1,0 +1,2 @@
+class MasterAgreement < Agreement
+end

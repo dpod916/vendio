@@ -1,0 +1,2 @@
+class SoftwareLicenseAgreement < MasterAgreement
+end

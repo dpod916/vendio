@@ -1,0 +1,26 @@
+
+<div class="sidebar-title">
+    <h3> <i class="fa fa-cube"></i>Assignments</h3>
+</div>
+
+<ul class="sidebar-list">
+    <% current_user.user_assignments.each do |assignment| %>
+        <li>
+            <a href="<%="#{url_helper(assignment.assignable)}"%>">
+                <div class="small pull-right m-t-xs">
+                    <%= time_ago_in_words(assignment.created_at.to_time) %> ago
+                </div>
+                <h4><%= assignment.title %></h4>
+                    <%= assignment.description %>
+                <div class="small">Completion with: 22%</div>
+                <div class="progress progress-mini">
+                    <div style="width: 22%" class="progress-bar progress-bar-warning"></div>
+                </div>
+                <div class="small text-muted m-t-xs"><%= "Deadline: #{assignment.due_date}" %></div>
+            </a>
+        </li>
+    <% end %>
+</ul>
+
+
+

@@ -1,0 +1,2 @@
+class ServicesAgreement < MasterAgreement
+end

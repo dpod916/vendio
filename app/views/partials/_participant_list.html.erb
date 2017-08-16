@@ -1,0 +1,20 @@
+<div class="ibox-content">
+  <small>This is example of task list</small>
+  <ul class="todo-list m-t ui-sortable">
+    <% item.user_assignments.each do |assignment| %>
+      <%= render partial: "partials/participant", locals: {assignment: assignment, item: item}  %>
+    <% end %>
+  </ul>
+
+  <% if (can? :manage, item) %>
+
+      <div class="btn-group">
+
+          <%= render partial: "assignments/admin_buttons", locals: {item: item } %>
+
+      </div>
+
+  <% end %>
+
+</div>
+

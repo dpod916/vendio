@@ -1,0 +1,5 @@
+created a profile for
+<% unless activity.recipient_type == "User" %>
+    the <%= "#{activity.recipient_type.underscore.humanize.downcase} " %>
+<% end %>
+<%= link_to activity.recipient.name, activity.recipient %>.<br>

@@ -1,0 +1,5 @@
+<% if current_user.following?(item) %>
+    <%= render partial: "follows/unfollow", locals: {item: item} %>
+<% else %>
+    <%= render partial: "follows/follow", locals: {item: item} %>
+<% end %>

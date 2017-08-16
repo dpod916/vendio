@@ -1,0 +1,210 @@
+/* Only demo */
+
+//= require iCheck/custom.css
+//= require fullcalendar/fullcalendar.css
+@media (max-width: 1000px) {
+  .welcome-message {
+    display: none;
+  }
+}
+
+.file-list li a {
+  color: inherit;
+  font-size: medium;
+  font-weight: 400;
+  font-family: -webkit-pictograph;
+}
+
+.btn-primary.btn-outline:hover {
+  color: #fff;
+  border-color: #fff;
+  background-color: #1ab394;
+}
+
+.fa-fw {
+  padding-top: 4px;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info,
+.btn-info:active:focus,
+.btn-info:active:hover,
+.btn-info.active:hover,
+.btn-info.active:focus {
+  background-color: #FFFFFF;
+  border-color: #21b9bb;
+  color: #21b9bb;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.btn-success.active:hover,
+.btn-success.active:focus {
+  background-color: #FFFFFF;
+  border-color: #1a7bb9;
+  color: #1a7bb9;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning,
+.btn-warning:active:focus,
+.btn-warning:active:hover,
+.btn-warning.active:hover,
+.btn-warning.active:focus {
+  background-color: #FFFFFF;
+  border-color: #f7a54a;
+  color: #f7a54a;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.btn-primary.active:focus {
+  background-color: #FFFFFF;
+  border-color: #18a689;
+  color: #18a689;
+}
+
+
+/* line 151, /home/ubuntu/workspace/app/assets/stylesheets/base/buttons.scss */
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger,
+.btn-danger:active:focus,
+.btn-danger:active:hover,
+.btn-danger.active:hover,
+.btn-danger.active:focus {
+  background-color: #ffffff;
+  border-color: #ec4758;
+  color: #ec4758;
+}
+
+.btn {
+  text-align: center;
+}
+
+img.img-small {
+  width: 38px;
+  height: 38px;
+}
+
+.ibox-content {
+  width: 100%;
+}
+
+.form-inline .form-control {
+  display: inline-block;
+}
+
+.btn-circle-xs {
+  width: 14px;
+  height: 14px;
+  padding: initial;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 8px;
+  line-height: 1.428571429;
+}
+
+.issue_users_modal {
+  width: 315px;
+}
+
+.issue_title {
+  width: auto;
+  max-width: 95%;
+  height: 25px;
+  max-height: 25px;
+  font-size: 12px;
+}
+
+.fa-file-pdf-o {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #f5f5f5;
+  background-color: #b30909;
+}
+
+.fa-file-excel-o {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #f5f5f5;
+  background-color: #1ab334;
+}
+
+.fa-file-word-o {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #f5f5f5;
+  background-color: #337ab7;
+}
+
+.fa-file-powerpoint-o {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #f5f5f5;
+  background-color: #d4711d;
+}
+
+select {
+  width: auto;
+  max-width: 90%;
+  height: 25px;
+  font-size: 12px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.modal-content {
+  background-color: #1ab394;
+}
+
+.modal-body {
+  background-color: #ffffff;
+}
+
+.note-editor .form-control {
+  height: 150px;
+}
+
+.dataTables_filter label {
+  margin-left: 15px;
+}

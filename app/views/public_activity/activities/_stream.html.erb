@@ -1,0 +1,27 @@
+<% unless activity.parameters[:changes].nil? && keys[1] == 'update' %>
+    <div class="stream">
+    <div class="stream-badge">
+        <i class="fa <%= activity_icon(activity) %>"></i>
+    </div>
+    <div class="stream-panel">
+        <div class="stream-info">
+            <a href="#">
+            <img src="<%= avatar_url(activity.owner) %>" />
+            <span><%= link_to owner.name, owner if owner %></span>
+            <%= render partial: "public_activity/#{keys[0]}/#{keys[1]}", locals: {activity: activity} %>
+            <span class="date"><%= time_ago_in_words(activity.created_at)  %> ago </span>
+
+            </a>
+        </div>
+
+        <div class="stream-footer">
+                <div class="btn-group">
+                    <button class="btn btn-white btn-xs"><i class="fa fa-thumbs-up"></i> Like this!</button>
+                    <button class="btn btn-white btn-xs"><i class="fa fa-comments"></i> Comment</button>
+                    <button class="btn btn-white btn-xs"><i class="fa fa-share"></i> Share</button>
+                </div>
+                <%= social_tree_for activity.comments.hash_tree %>
+            </div>
+        </div>
+    </div>
+<% end %>

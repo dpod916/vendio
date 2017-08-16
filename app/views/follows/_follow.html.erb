@@ -1,0 +1,8 @@
+<%= button_to("Follow", {:controller => :follows,
+                         :action => 'create',
+                         :item => item.dash_param },
+                         :remote => true,
+                         :id => 'follow',
+                         :class => "btn-sm btn-block btn-primary",
+                         :href => "/follow/#{item.dash_param}" ) %>
+

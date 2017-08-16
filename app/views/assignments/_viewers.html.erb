@@ -1,0 +1,30 @@
+<%= simple_form_for(item, html: { class: 'form-horrizontal'}, remote: true)  do |f| %>
+    <%= f.input :viewer_tokens, as: :string, label: "Update Viewers", input_html: {data: { pre: item.viewers }} %>
+    <%= f.button :submit,  "Update", {class: 'btn btn-xs btn-white pull-left', id: 'add-button'} %>
+<% end %>
+<%= link_to "Cancel", item, {class: 'btn btn-xs btn-white pull-left', id: 'viewer-cancel-button', remote: true } %>
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+$("#viewer-cancel-button").click(function() {
+
+            $('*[id*=_form]').each(function() {
+                $(this).hide();
+            });
+
+            $('*[id*=s_button]').each(function() {
+                $(this).show();
+            });
+
+            $('.token-input-list-facebook').remove();
+
+
+
+});
+
+
+</script>
+
+<% end %>

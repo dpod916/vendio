@@ -1,0 +1,14 @@
+<div class="ibox">
+    <div class="ibox-content group-content">
+      <h3><%= group_name %></h3>
+        <div class="followers">
+            <div class="feed-element">
+                <% group.each do |follower| %>
+                    <a href="<%= url_helper(follower) %>">
+                        <img  alt="image" class="img-circle" src="<%= avatar_url(follower.profile) %>">
+                    </a>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

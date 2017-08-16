@@ -1,0 +1,18 @@
+<%= javascript_include_tag 'work_order.coffee' %> 
+<div class="row wrapper border-bottom white-bg page-heading">
+    <%= render partial: "partials/top_details", locals: {owner: @work_order} %>
+</div>
+
+<div class="row">
+    <%= render partial: "work_orders/details", locals: {owner: @work_order} %>
+</div>
+
+<div class="row m-t-sm">
+    <%= render partial: "partials/tabs", locals: {owner: @work_order} %>
+</div>
+
+</div>
+    <%= render partial: "partials/side_details", locals: {owner: @work_order} %>
+</div>
+
+<%= render partial: "partials/custom_js", locals: {owner: @work_order} %>

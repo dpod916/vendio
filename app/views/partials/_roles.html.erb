@@ -1,0 +1,20 @@
+<div id="<%= "#{assignment.dash_param.downcase}_roles" %>">
+  <% item = assignment.assignable if assignment.class.name.include?('Assignment') %>
+  <% item = assignment.training if assignment.class.name.include?('Training') %>
+  <% user = assignment.user %>
+  <div class="btn-group">
+  <li>
+    <a><%= link_to fa_icon("user-plus fw", text: "Make Owner"), {:controller => class_name(assignment).to_sym, :action => 'update', class_name(assignment).singularize.to_sym => assignment, :role => 'owner' }, :method => :post,  :remote => true, :data => "assignment-#{assignment.id}_owner_#{item.dash_param}", :class => "btn  btn-outline btn-block btn-primary", :href => "#{url_helper(assignment)}/owner" unless item.owners.include?(user) %>
+  </a>
+  </li>
+  <li>
+    <%= link_to fa_icon("user-plus fw", text: "Make Admin"), {:controller => class_name(assignment).to_sym, :action => 'update', class_name(assignment).singularize.to_sym => assignment, :role => 'admin' }, :method => :post,  :remote => true, :class => "btn  btn-outline btn-primary btn-block", :href => "#{url_helper(assignment)}/admin" unless item.admins.include?(user) %>
+  </li>
+  <li>
+    <%= link_to fa_icon("user-plus fw", text: "Make Participant"), {:controller => class_name(assignment).to_sym, :action => 'update', class_name(assignment).singularize.to_sym => assignment, :role => 'participant' }, :method => :post,  :remote => true, :data => "assignment-#{assignment.id}_participant_#{item.dash_param}", :class => "btn btn-block btn-outline btn-primary", :href => "#{url_helper(assignment)}/participant" unless item.participants.include?(user) %>
+  </li>
+  <li>
+    <%= link_to fa_icon("user-plus fw", text: "Make reviewer"), {:controller => class_name(assignment).to_sym, :action => 'update', class_name(assignment).singularize.to_sym => assignment, :role => 'reviewer' }, :method => :post,  :remote => true, :data => "assignment-#{assignment.id}_reviewer_#{item.dash_param}", :class => "btn btn-block btn-outline btn-primary", :href => "#{url_helper(assignment)}/reviewer" unless item.reviewers.include?(user) %>
+  </li>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+
+<%= simple_form_for([item.comments.new], html: { class: 'form-horrizontal'}) do |f| %>
+    <div class="col-lg-12">
+		<%= f.input :body, label: false %>
+		<%= f.input :commentable_id,  :as => :hidden, :input_html => { :value => item.id } %>
+        <%= f.input :commentable_type,  :as => :hidden, :input_html => { :value => item.class.name } %>
+  	</div>
+  	<div class="row">
+  	<div class="col-lg-12">
+  		<%= f.button :submit, "Comment", class: "btn btn-primary btn-xs pull-right comment-button" %>
+  	</div>
+  	</div>
+<% end %>

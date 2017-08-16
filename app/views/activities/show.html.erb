@@ -1,0 +1,20 @@
+<% activity = @activity %>
+<div class="stream">
+    <div class="stream-badge">
+        <i class="fa fa-pencil"></i>
+    </div>
+    <div class="stream-panel">
+        <div class="stream-info">
+            <a href="#">
+                <img src="<%= image_path("#{avatar_url(activity.owner)}") %>" />
+                <span><%= link_to activity.owner.name, activity.owner if activity.owner %></span>
+                <span class="date"><%= time_ago_in_words(activity.created_at)  %> ago </span>
+            </a>
+        </div>
+        <% if activity.trackable_type == 'Matter' %>
+            <%= render partial: 'public_activity/default', locals: {activity: activity} %>.
+        <% else %>
+            <%= render_activity activity %>.
+        <% end %> 
+    </div>
+</div>

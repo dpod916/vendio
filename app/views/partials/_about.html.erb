@@ -1,0 +1,13 @@
+<div class="ibox">
+    <div class="ibox-content">
+        <h3><%= "About" %></h3>
+        <div class="scroll_content">
+             <%= best_in_place_if (can? :update, item) || current_user == item, item.profile, :description, :as => :textarea, :ok_button => 'Save', :ok_button_class => "btn-xs btn-primary",  :cancel_button => 'Cancel',:cancel_button_class => "btn-xs btn-danger", :place_holder => "Click to add a description", :class => "col-lg-12" %>
+        </div>
+
+        <p class="small font-bold">
+            <span><i class="fa fa-circle text-navy"></i> Online status</span>
+        </p>
+
+    </div>
+</div>

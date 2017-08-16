@@ -1,0 +1,2 @@
+class ConsultingAgreement < MasterAgreement
+end

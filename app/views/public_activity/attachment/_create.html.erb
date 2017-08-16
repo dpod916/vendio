@@ -1,0 +1,5 @@
+uploaded <%= link_to truncate(activity.trackable.file_file_name, length: 26), attachment_url(activity.trackable), target: :_blank %>
+<% unless recipient_controller(activity.recipient_type) %>
+    <%= "to the #{activity.recipient_type} " %> <%= link_to activity.recipient_title, activity.recipient %>
+<% end %>
+.<br>

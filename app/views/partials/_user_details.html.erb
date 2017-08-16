@@ -1,0 +1,16 @@
+
+<% i = 0 %>
+<% item.user_details.each do |relationship| %>
+<% unless  item.send("#{relationship}").nil? %>
+<%= content_tag(:div, "", :class => 'row') if i.even? %>
+    <div class="<%= pull_direction(i.even?) %>">
+        <i class="user_details fa <%= relationship_icon(relationship) %>"></i><%= link_to item.send("#{relationship}_name"), item.send("#{relationship}") %>
+    </div>
+<% i+=1 %>
+<% end %>
+<% end %>
+<div class="<%= pull_direction(i.even?) %>">
+    <i class="user_details fa fa-envelope-o"></i><a href="mailto:<%= item.email %>">Email</a>
+ </div>
+<br>
+<br>

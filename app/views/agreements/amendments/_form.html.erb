@@ -1,0 +1,23 @@
+<% @amendable = @owner %>
+<% if @owner.authenticated_users.include?(current_user.id) %>
+	<div class="col-md-4">
+	    <a data-toggle="modal" class="btn btn-primary pull-right" href="#modal-form-extension">Extension</a>
+	    <div id="modal-form-extension" class="modal fade" aria-hidden="true">
+	    <div class="modal-dialog">
+	    <div class="modal-body">
+	        <%= render partial: "extensions/form", locals: {extension: @owner.extensions.new} %>
+	    </div>
+	    </div>
+	    </div>
+	</div>
+	<div class="col-md-4">
+	    <a data-toggle="modal" class="btn btn-primary pull-right" href="#modal-form-extension2">Extension</a>
+	    <div id="modal-form-extension2" class="modal fade" aria-hidden="true">
+	    <div class="modal-dialog">
+	    <div class="modal-body">
+	        <%= render partial: "extensions/form", locals: {extension: @owner.extensions.new} %>
+	    </div>
+	    </div>
+	    </div>
+	</div>
+<% end %>

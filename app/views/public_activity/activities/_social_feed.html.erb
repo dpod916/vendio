@@ -1,0 +1,43 @@
+<div class="social-feed-box">
+
+            <div class="pull-right social-action dropdown">
+                <button data-toggle="dropdown" class="dropdown-toggle btn-white">
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu m-t-xs">
+                    <li><a href="#">Config</a></li>
+                </ul>
+            </div>
+            <div class="social-avatar">
+                <a href="" class="pull-left">
+                    <img alt="image" src="<%= avatar_url(activity.owner.profile) %>">
+                </a>
+                <div class="media-body">
+                    <a href="#">
+                        <%= link_to owner.name, owner if owner %> <%= render partial: "public_activity/#{keys[0]}/#{keys[1]}", locals: {activity: activity} %>
+                    </a>
+                    <small class="text-muted"><%= time_ago_in_words(activity.created_at)  %> ago </small>
+                </div>
+            </div>
+            <div class="social-body">
+                <p>
+
+                </p>
+
+                <div class="btn-group">
+                    <button class="btn btn-white btn-xs"><i class="fa fa-thumbs-up"></i> Like this!</button>
+                    <button class="btn btn-white btn-xs"><i class="fa fa-comments"></i> Comment</button>
+                    <button class="btn btn-white btn-xs"><i class="fa fa-share"></i> Share</button>
+                </div>
+            </div>
+            <%= social_tree_for activity.comments.hash_tree %>
+
+
+            </div>
+
+        </div>
+
+
+
+
+

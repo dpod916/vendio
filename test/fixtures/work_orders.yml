@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  vendor_agreement: one
+  user: one
+  file: 
+  start_date: 2016-11-13 22:19:52
+  end_date: 2016-11-13 22:19:52
+
+two:
+  number: 1
+  vendor_agreement: two
+  user: two
+  file: 
+  start_date: 2016-11-13 22:19:52
+  end_date: 2016-11-13 22:19:52

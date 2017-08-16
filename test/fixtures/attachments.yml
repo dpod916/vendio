@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  attachable: one
+  attachable_type: Attachable
+  file: 
+
+two:
+  user: two
+  attachable: two
+  attachable_type: Attachable
+  file: 

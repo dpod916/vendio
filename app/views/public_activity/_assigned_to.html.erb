@@ -1,0 +1,3 @@
+<% if activity.trackable %>
+assigned <%= link_to activity.trackable_title, activity.trackable %> to <%= link_to activity.trackable.user.name, activity.trackable.user %>
+<% end %>

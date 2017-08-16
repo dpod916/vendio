@@ -1,0 +1,5 @@
+<%= simple_form_for comment do |f| %>
+	<%= f.input :body, placeholder: "Add a comment....", label: false, as: :text, html5: true  %>
+    <%= f.button :submit,  "Add comment", class: 'btn btn-primary pull-right'%>
+ <% end %>
+

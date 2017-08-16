@@ -1,0 +1,2 @@
+module TrainingRequiredHelper
+end

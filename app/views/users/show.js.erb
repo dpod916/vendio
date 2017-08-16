@@ -1,0 +1,9 @@
+$('#public_activities').append('<%= j render(@public_activities) %>')
+<% if @public_activities.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate(@public_activities) %>')
+  $('.pagination').hide()
+<% else %>
+  $('.pagination').hide()
+  $('#append_and_paginate').remove()
+<% end %>
+

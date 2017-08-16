@@ -1,0 +1,9 @@
+<div class="profile-image">
+    <img id="profile-image" src="<%= "#{avatar_url(item.profile)}" %>" class="img-circle circle-border m-b-md" alt="profile">
+    <% if can? :update, item %>
+        <%= render partial: "partials/avatar_form", locals: {item: item} %>
+    <% end %>
+</div>
+
+
+

@@ -1,0 +1,40 @@
+<a href="#" id="upload-picture">Upload Picture</a>
+<div id="avatar_form">
+<%= form_for(item.profile, html: { multipart: true, class: "dropzone"}) do |f|  %>
+  <div class="fallback">
+    <%= f.file_field :avatar %><br>
+    <%= f.submit "Upload" %>
+  </div>
+<% end %>
+</div>
+
+
+<% content_for :javascript do %>
+   <script type="text/javascript">
+
+
+    $(document).ready(function(){
+	// disable auto discover
+	    $("#avatar_form").hide()
+		Dropzone.autoDiscover = false
+
+		// grap our upload form by its id
+		$('*[id^="edit_profile"]').dropzone({
+			// restrict image size to a maximum 1MB
+			maxFilesize: 100,
+			// changed the passed param to one accepted by
+			// our rails app
+			paramName: "profile[avatar]",
+			// show remove links on each image upload
+			addRemoveLinks: true
+		})
+	})
+
+	 $("#upload-picture").click(function(){
+     	$("#avatar_form").show()
+     	$("#profile-image").hide()
+     })
+
+
+</script>
+<% end %>

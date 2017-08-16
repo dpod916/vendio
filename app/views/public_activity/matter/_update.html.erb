@@ -1,0 +1,8 @@
+updated a 
+
+<% if activity.trackable %>
+  <%= "#{activity.trackable_type} titled: " %>
+  <%= link_to activity.trackable_title, activity.trackable %>
+<% else %>
+  matter which has since been removed
+<% end %>

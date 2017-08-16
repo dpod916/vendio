@@ -1,0 +1,31 @@
+<%= simple_form_for(item, html: { class: 'form-horrizontal'}, remote: true)  do |f| %>
+    <%= f.input :admin_tokens, as: :string, label: "Update Admins", input_html: {data: { pre: item.admins }} %>
+    <%= f.button :submit,  "Update", {class: 'btn btn-xs btn-white pull-left', id: 'add-button'} %>
+<% end %>
+<%= link_to "Cancel", item, {class: 'btn btn-xs btn-white pull-left', id: 'admin-cancel-button', remote: true } %>
+
+<% content_for :javascript do %>
+
+
+<script type="text/javascript">
+
+$("#admin-cancel-button").click(function() {
+
+            $('*[id*=_form]').each(function() {
+                $(this).hide();
+            });
+
+            $('*[id*=s_button]').each(function() {
+                $(this).show();
+            });
+
+            $('.token-input-list-facebook').remove();
+
+
+
+});
+
+
+</script>
+
+<% end %>

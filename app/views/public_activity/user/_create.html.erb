@@ -1,0 +1,8 @@
+submitted an attestation for the
+
+<% if activity.trackable %>
+  <%= "entitled: " %>
+  <%= link_to activity.trackable.policy.name, activity.trackable.policy %>
+<% else %>
+  which has since been removed
+<% end %>

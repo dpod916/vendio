@@ -1,0 +1,30 @@
+<%= simple_form_for(item, html: { class: 'form-horrizontal'}, remote: true)  do |f| %>
+    <%= f.input :owner_tokens, as: :string, label: "Update Owners", input_html: {data: { pre: item.owners }} %>
+    <%= f.button :submit,  "Update", {class: 'btn btn-xs btn-white pull-left', id: 'add-button'} %>
+<% end %>
+<%= link_to "Cancel", item, {class: 'btn btn-xs btn-white pull-left', id: 'owner-cancel-button', remote: true } %>
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+$("#owner-cancel-button").click(function() {
+
+            $('*[id*=_form]').each(function() {
+                $(this).hide();
+            });
+
+            $('*[id*=s_button]').each(function() {
+                $(this).show();
+            });
+
+            $('.token-input-list-facebook').remove();
+
+
+
+});
+
+
+</script>
+
+<% end %>

@@ -1,0 +1,45 @@
+/* line 1, C:/Sites/compliance/app/assets/stylesheets/training_sessions.scss */
+select {
+  width: 150px;
+  max-width: 150px;
+  height: 25px;
+  border-color: #ffffff;
+}
+
+/* line 8, C:/Sites/compliance/app/assets/stylesheets/training_sessions.scss */
+.form-inline .form-control {
+  display: block;
+  width: auto;
+  max-width: 150px;
+  height: 30px;
+  max-height: 30px;
+  vertical-align: middle;
+  font-size: 12px;
+  border: 0px;
+}
+
+/* line 19, C:/Sites/compliance/app/assets/stylesheets/training_sessions.scss */
+.date {
+  border: 0px;
+}
+
+/* line 23, C:/Sites/compliance/app/assets/stylesheets/training_sessions.scss */
+.time {
+  border: 0px;
+}
+
+/* line 28, C:/Sites/compliance/app/assets/stylesheets/training_sessions.scss */
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+/* line 33, C:/Sites/compliance/app/assets/stylesheets/training_sessions.scss */
+.modal-content {
+  background-color: #1ab394;
+}
+
+/* line 37, C:/Sites/compliance/app/assets/stylesheets/training_sessions.scss */
+.modal-body {
+  background-color: #ffffff;
+}

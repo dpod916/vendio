@@ -1,0 +1,9 @@
+$("#attachments-list").html("<%= escape_javascript(render(partial: "partials/attachments.html.erb", locals: {item: item})) %>")
+
+$(document).ready(function(){
+
+      $('.delete_attachment').bind('ajax:success', function() {
+              $(this).closest('li').fadeOut()
+      })
+
+ })

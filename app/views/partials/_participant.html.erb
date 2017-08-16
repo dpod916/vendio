@@ -1,0 +1,59 @@
+<li>
+    <span class="m-l-xs">
+
+        <a href="<%= url_helper(assignment.user) %>">
+          <img  alt="image" class="img-circle img-small" src="<%= avatar_url(assignment.user.profile) %>">
+        </a>
+        <strong>
+        <%= link_to assignment.user.name, assignment.user %>
+        </strong>
+        <div class="pull-right">
+
+          <div class="btn-group">
+
+            <button data-toggle="dropdown" class="btn btn-sm btn-primary dropdown-toggle">
+              <i class="fa <%= user_assignment_icon(assignment.role)%>"></i> <%= assignment.role %>
+            </button>
+
+            <% if (can? :manage, item) %>
+              <ul class="dropdown-menu">
+                <%= render partial: "partials/roles", locals: {assignment: assignment} %>
+              </ul>
+            <% end %>
+
+          </div>
+
+          <% if (can? :manage, item) %>
+
+            <div class="btn-group">
+
+              <button data-toggle="dropdown" class="btn btn-sm btn-primary dropdown-toggle">
+                  <i class="fa fa-plus fw"></i>
+              </button>
+
+              <ul class="dropdown-menu">
+                  <%= render partial: "partials/participant_actions", locals: {assignment: assignment} %>
+              </ul>
+
+            </div>
+
+          <% end %>
+
+          <% unless current_user == assignment.user %>
+
+            <div class="btn-group">
+
+              <button class="btn btn-xs dropdown-toggle">
+
+                <div id="<%= "#{assignment.user.dash_param.downcase}_follow_actions" %>">
+                  <%= render partial: "partials/follow_actions", locals: {item: assignment.user} %>
+                </div>
+
+              </button>
+
+            </div>
+
+          <% end %>
+      </div>
+    </span>
+</li>

@@ -1,0 +1,15 @@
+<div class="ibox">
+    <div class="ibox-content">
+        <h3>Assignments</h3>
+        <div class="followers">
+            <div class="feed-element">
+                <% item.user_assignments.each do |assignment| %>
+                    <a href="<%= url_helper(assignment.assignable) %>">
+                        <img  alt="image" class="img-circle" src="<%= avatar_url(assignment.assignable.profile) %>">
+                        <%= assignment.assignable.name %>
+                    </a>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

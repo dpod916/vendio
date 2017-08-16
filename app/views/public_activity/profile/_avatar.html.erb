@@ -1,0 +1,12 @@
+changed
+<% if is_active_controller('user') %>
+    <%=  link_to "#{activity.trackable_title}'s", activity.recipient unless is_active_controller(activity.recipient_type.downcase)  %>
+    <%= "their profile picture" if is_active_controller(activity.recipient_type.downcase) %>
+<% else %>
+    <%  if is_active_controller(activity.recipient_type.downcase)  %>
+        <%=  link_to "#{activity.trackable_title}'s", activity.recipient if is_active_controller(activity.recipient_type.downcase)  %> profile picture
+    <% else %>
+        <%= "the profile picture" %>
+    <% end %>
+<% end %>
+

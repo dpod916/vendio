@@ -1,0 +1,26 @@
+<div class="profile-info">
+    <div class="">
+        <div>
+
+            <h2 class="no-margins">
+               <%= best_in_place_if (can? :update, item) || current_user == item, item.profile, :name, :as => :input %>
+            </h2>
+            <h4><%= best_in_place_if (can? :update, item) || current_user == item, item.profile, :title, :as => :input %></h4>
+            <small>
+                <%= best_in_place_if (can? :update, item) || current_user == item, item.profile, :tag_line, :as => :input %>
+                <div id="fb"><a id="follow_buttons"></a></div>
+            </small>
+        </div>
+    </div>
+</div>
+
+<% content_for :javascript do %>
+   <script type="text/javascript">
+
+    $('.button_to').click(, function() {
+           $("#follow_buttons").html('<%= escape_javascript(render :partial => "partials/follow_buttons", :locals => {:item => item}) %>')
+    })
+
+
+   </script>
+<% end %>

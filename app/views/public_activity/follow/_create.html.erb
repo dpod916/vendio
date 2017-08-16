@@ -1,0 +1,14 @@
+<div class="feed-element">
+    <a href="#" class="pull-left">
+        <img alt="image" class="img-circle" src="<%= avatar_url(activity.owner) %>">
+    </a>
+    <div class="media-body ">
+        <small class="pull-right text-navy"><%= time_ago_in_words(activity.created_at)  %> ago </small>
+        <strong><%= link_to activity.owner.name, activity.owner %></strong> started following <strong><%= activity.recipient.name %></strong>. <br>
+        <small class="text-muted"><%= activity.created_at.to_date.to_formatted_s :long_ordinal %></small>
+        <div class="actions">
+            <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
+            <a class="btn btn-xs btn-danger"><i class="fa fa-heart"></i> Love</a>
+        </div>
+    </div>
+</div>

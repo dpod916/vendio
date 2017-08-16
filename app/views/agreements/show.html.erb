@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Old:</strong>
+  <%= @agreement.old_id %>
+</p>
+
+<p>
+  <strong>Agreement number:</strong>
+  <%= @agreement.agreement_number %>
+</p>
+
+<p>
+  <strong>Agreement version:</strong>
+  <%= @agreement.agreement_version %>
+</p>
+
+<p>
+  <strong>Added text:</strong>
+  <%= @agreement.added_text %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @agreement.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @agreement.description %>
+</p>
+
+<%= link_to 'Edit', edit_agreement_path(@agreement) %> |
+<%= link_to 'Back', agreements_path %>

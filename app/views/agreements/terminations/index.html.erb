@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Terminations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @terminations.each do |termination| %>
+      <tr>
+        <td><%= link_to 'Show', termination %></td>
+        <td><%= link_to 'Edit', edit_termination_path(termination) %></td>
+        <td><%= link_to 'Destroy', termination, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Termination', new_termination_path %>

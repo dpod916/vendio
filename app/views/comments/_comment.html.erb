@@ -1,0 +1,20 @@
+	<div class="feed-element">   
+	   <div class="media-body ">
+		   	<div class="well">
+		   	<strong><%=link_to comment.user_name, comment.user %></strong> <%= comment.body %></div>
+	       <div class="pull-left">
+	       		<a data-toggle="modal" class="btn-xs btn-white" href= <%= "#modal-form-#{comment.id}"%>><i class="fa fa-thumbs-up"></i> Like</a>
+	       		<a data-toggle="modal" class="btn-xs btn-white" href= <%= "#modal-form-#{comment.id}"%>>Reply</a> - 
+	        	<small class="text-muted">
+	        		<%= time_ago_in_words(comment.created_at) %> ago
+	        	</small>
+	       </div>
+	       <div class="pull-right">
+	       		<% if comment.user == current_user %>
+		       		<a data-toggle="modal" class="btn-xs btn-white" href= <%= "#modal-form-edit-#{comment.id}"%>>Edit</a> - 
+	       			<%= link_to 'Delete',  comment,  method: :delete, class: "btn-xs btn-white", data: { confirm: 'Are you sure?' } %>
+	       		<% end %>
+	       	</div>	 			 
+	    </div>
+	 </div>
+

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  old_id: 1
+  agreement_number: 1
+  agreement_version: MyString
+  added_text: MyText
+  title: MyString
+  description: MyText
+
+two:
+  old_id: 1
+  agreement_number: 1
+  agreement_version: MyString
+  added_text: MyText
+  title: MyString
+  description: MyText

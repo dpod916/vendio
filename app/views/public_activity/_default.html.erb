@@ -1,0 +1,22 @@
+<% activity_type = activity.key.split('.')[1] %>
+<% if activity_type == 'create' %>
+	created 
+	<% if activity.trackable %>
+	  <%= " #{convert_camel(activity.trackable_type)} " %>
+	  <%= link_to activity.trackable_title, activity.trackable %>
+	<% else %>
+	  matter which has since been removed
+	<% end %>
+<% end %>
+<% if activity_type == 'update' %>
+	updated
+	<% if activity.trackable %>
+	  <%= " #{convert_camel(activity.trackable_type)} " %>
+	  <%= link_to activity.trackable_title, activity.trackable %>
+	<% else %>
+	  matter which has since been removed
+	<% end %>
+<% end %>
+<% if activity_type == 'destroy' %>
+	deleted a matter
+<% end %>

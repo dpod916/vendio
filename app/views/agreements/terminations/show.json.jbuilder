@@ -1,0 +1,1 @@
+json.partial! "terminations/termination", termination: @termination

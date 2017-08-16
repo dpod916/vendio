@@ -1,0 +1,10 @@
+<li>
+  <% unless current_user.following?(item) %>
+      <%= link_to fa_icon("user-plus fw"), {:controller => :follows, :action => 'create', :item => item.dash_param }, :method => :post,  :remote => true, :data => item.dash_param, :list => true, :class => "btn btn-sm btn-primary", :href => "/follow/#{item.dash_param}" %>
+  <% else %>
+    <%= link_to fa_icon("user-times fw"), {:controller => :follows, :action => 'destroy', :item => item.dash_param }, :method => :delete,  :remote => true, :data => item.dash_param, :list => true, :class => "btn btn-sm btn-danger", :href => "/unfollow/#{item.dash_param}" %>
+  <% end %>
+</li>
+
+
+

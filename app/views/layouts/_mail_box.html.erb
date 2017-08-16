@@ -1,0 +1,9 @@
+<li class="<%= is_active_controller('mailbox') %>">
+    <a href="#"><i class="fa fa-envelope"></i> <span class="nav-label" data-i18n="nav.mailbox">Mailbox </span><span class="label label-warning pull-right">16/24</span></a>
+    <ul class="nav nav-second-level collapse <%= is_active_controller('mailbox') %>">
+        <li class="<%= is_active_action('inbox') %>"><%= link_to "Inbox", mailbox_inbox_path %> </li>
+        <li class="<%= is_active_action('email_view') %>"><%= link_to "Email view", mailbox_email_view_path %> </li>
+        <li class="<%= is_active_action('compose_email') %>"><%= link_to "Compose email", mailbox_compose_email_path %> </li>
+        <li class="<%= is_active_action('email_templates') %>"><%= link_to "Email templates", mailbox_email_templates_path %> </li>
+    </ul>
+</li>

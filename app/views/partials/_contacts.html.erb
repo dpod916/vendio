@@ -1,0 +1,6 @@
+<%= form_with(model: item) do |f| %>
+
+    <%= f.text_field :contact_tokens, as: :string, label: "Add Contact", input_html: {data: { pre: item.contacts }} %>
+    <%= f.submit %>
+<% end %>
+<%= link_to "Cancel", item, {class: 'btn btn-xs btn-white pull-left', id: 'cancel-button', remote: true } %>

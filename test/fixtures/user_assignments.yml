@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  assignable: one
+  assignable_type: Assignable
+  role: MyString
+  assignor_id: 1
+  accepted: false
+
+two:
+  user: two
+  assignable: two
+  assignable_type: Assignable
+  role: MyString
+  assignor_id: 1
+  accepted: false

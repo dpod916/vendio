@@ -1,0 +1,45 @@
+ <% @owner.nil? ? owner = @owner : @owner = owner %>
+ <table class="table table-striped">
+        <thead>
+        <h4> <%= extension_title %>
+            <% if extension_title.include?('Current') %>
+             <%= " " %> (<%= link_to "All Extensions", "/#{@owner.class.name.pluralize.underscore}/#{@owner.id}/extensions" %>)
+            <% end %>
+        </h4>
+        <tr>
+            <th>Status</th>
+            <th>Title</th>
+            <th>Prior Expiration</th>
+            <th>Extended Expiration</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% unless extensions.first.nil? %>
+        <% extensions.each do |extension| %>  
+        <tr>
+            <td>
+            <% unless extension.status_id.nil? %>
+                <span class="<%="label label-#{status_label(extension.status_id)}"%>"><i class="fa fa-check"></i> <%= extension.status.name%></span>
+            <% end %>
+            </td>
+            <td>
+                <%= link_to extension.title, extension %>
+            </td>
+            <td>
+                <%= extension.start_date %>
+            </td>
+            <td>
+                <%= extension.due_date %>
+            </td>
+            <td>
+                <p class="small">
+                    <%= extension.description %>
+                </p>
+            </td>
+
+        </tr>
+        <% end %>
+        <% end %>
+        </tbody>
+</table>

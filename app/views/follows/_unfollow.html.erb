@@ -1,0 +1,1 @@
+<%= button_to("Unfollow", {:controller => :follows, :action => 'destroy', :item => item.dash_param }, :method => :delete,  :remote => true, :data => item.dash_param, :id => 'unfollow', :class => "btn-sm btn-block btn-danger", :href => "/unfollow/#{item.dash_param}" ) %>

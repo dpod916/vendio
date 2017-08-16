@@ -1,0 +1,8 @@
+updated a task
+
+<% if activity.trackable %>
+  <%= " entitled: " %>
+  <%= link_to activity.trackable_title, activity.trackable %>
+<% else %>
+   which has since been removed
+<% end %>

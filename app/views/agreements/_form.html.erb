@@ -1,0 +1,16 @@
+<%= simple_form_for(@agreement) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :old_id %>
+    <%= f.input :agreement_number %>
+    <%= f.input :agreement_version %>
+    <%= f.input :added_text %>
+    <%= f.input :title %>
+    <%= f.input :description %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

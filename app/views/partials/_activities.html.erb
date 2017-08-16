@@ -1,0 +1,12 @@
+<% unless activities.nil? %>
+  <h5><%= key %></h5>
+  <% activities = activities.paginate(:page => params[:page], :per_page => 3) %>
+  <div class="ibox-content-2">
+      <div class="feed-activity-list" data-fetch-url="/feed/fetch" id="activity-feed"%>
+          <%= render activities, locals: {key: key} %>
+      </div>
+      <div id="<%="append_and_paginate_#{key.gsub('.', '_')}_#{date}"%>" class="col-md-12">
+          <%= will_paginate activities %>
+      </div>
+  </div>
+<% end %>

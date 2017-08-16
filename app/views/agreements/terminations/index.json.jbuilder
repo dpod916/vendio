@@ -1,0 +1,1 @@
+json.array! @terminations, partial: 'terminations/termination', as: :termination

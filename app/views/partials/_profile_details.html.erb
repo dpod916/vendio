@@ -1,0 +1,79 @@
+<div class="ibox float-e-margins">
+    <div class="ibox-title">
+        <h5>Profile Detail</h5>
+    </div>
+    <div>
+        <div class="ibox-content no-padding border-left-right">
+            <img alt="image" class="img-responsive" src="<%= "#{avatar_url(item.profile)}" %>">
+            <%= render partial: "partials/avatar_form", locals: {item: item} if (can? :update, item) || current_user == item %>
+        </div>
+        <div class="ibox-content profile-content">
+            <h4><i class="fa fa-hashtag"></i><strong><%= best_in_place_if (can? :update, item) || current_user == item, item, :name, :as => :input %></strong></h4>
+            <p><i class="fa fa-id-card-o"></i> <%= best_in_place_if (can? :update, item) || current_user == item, item, :title, :as => :input %></p>
+            <h5>
+
+            </h5>
+            <div class="scroll_content">
+                <%= render partial: "partials/user_details", locals: {item: item} if item.class.name == 'User' %>
+                <i class="fa fa-quote-left"></i>
+                <%= best_in_place_if (can? :update, item) || current_user == item, item.profile, :description, :as => :textarea, :place_holder => "Click to add a description" %> <a>   </a>
+                <i class="fa fa-quote-right"></i>
+            </div>
+
+            <div class="row m-t-lg">
+            <% if item.class.name == "User" %>
+                <div class="col-md-4">
+                    <span class="line">5,3,9,6,5,9,7,3,5,2</span>
+                    <h5><strong><%= item.user_assignments.count %></strong> Assignments</h5>
+                </div>
+            <% end %>
+            <% unless item.class.name == "User" %>
+                <div class="col-md-4">
+                    <span class="line">5,3,9,6,5,9,7,3,5,2</span>
+                    <h5><strong><%= item.tasks.count %></strong> Tasks</h5>
+                </div>
+            <% end %>
+            <% if item.class.name == "User" %>
+                <div class="col-md-4">
+                    <span class="line">5,3,9,6,5,9,7,3,5,2</span>
+                    <h5><strong><%= item.followers_count %></strong> Followers</h5>
+                </div>
+            <% end %>
+            <% unless item.class.name == "User" %>
+                <div class="col-md-4">
+                    <span class="line">5,3,9,6,5,9,7,3,5,2</span>
+                    <h5><strong><%= item.users.count %></strong> Users</h5>
+                </div>
+            <% end %>
+                <div class="col-md-4">
+                    <span class="bar">5,3,2,-1,-3,-2,2,3,5,2</span>
+                    <h5><strong><%= item.followers_count %></strong> Followers</h5>
+                </div>
+            </div>
+             <% unless current_user == item %>
+            <div class="user-button">
+                <div class="row">
+
+                    <div class="col-md-6">
+                      <li><button type="button" class="btn btn-primary btn-sm btn-block"><i class="fa fa-envelope"></i> Send Message</button></li>
+                    </div>
+                        <div class="col-md-6">
+                            <div id="<%= "#{item.dash_param.downcase}_follow_actions" %>">
+                              <li><%= render :partial => "partials/follow_buttons", :locals => {:item => item} %></li>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <% end %>
+        </div>
+    </div>
+</div>
+
+
+
+<% content_for :javascript do %>
+   <script type="text/javascript">
+
+
+   </script>
+<% end %>

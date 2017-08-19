@@ -1,2 +1,2 @@
-class Agreement < ApplicationRecord
+class Agreement < SecondBase::Base
 end

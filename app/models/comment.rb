@@ -1,4 +1,4 @@
-class Comment < ApplicationRecord
+class Comment < SecondBase::Base
 include PublicActivity::Model
 searchkick
 tracked owner: Proc.new{ |controller, model| controller.current_user }

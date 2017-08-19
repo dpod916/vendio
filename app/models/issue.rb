@@ -1,4 +1,4 @@
-class Issue < ApplicationRecord
+class Issue < SecondBase::Base
   belongs_to :issuable, polymorphic: true
   include Item
 

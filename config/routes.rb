@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  resources :companies
+  resources :vendors
   #comfy_route :cms_admin, :path => '/admin'
   mount RailsEmailPreview::Engine, at: 'emails'
   resources :agreements

@@ -1,4 +1,4 @@
-class Attachment < ApplicationRecord
+class Attachment < SecondBase::Base
   belongs_to :user
   belongs_to :attachable, polymorphic: true
   searchkick

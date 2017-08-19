@@ -1,4 +1,4 @@
-class Matter < ApplicationRecord
+class Matter < SecondBase::Base
   belongs_to :matterable
   include Item
 

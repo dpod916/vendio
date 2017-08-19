@@ -1,2 +1,2 @@
-class Severity < ApplicationRecord
+class Severity < SecondBase::Base
 end

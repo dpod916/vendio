@@ -1,4 +1,4 @@
-class User < ApplicationRecord
+class User < SecondBase::Base
   include Assignments
   include PublicActivity::Model
   has_many :attachments

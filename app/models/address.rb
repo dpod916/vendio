@@ -1,3 +1,3 @@
-class Address < ApplicationRecord
+class Address < SecondBase::Base
   belongs_to :city
 end

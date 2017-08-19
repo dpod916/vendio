@@ -1,4 +1,4 @@
-class CreateMatterHierarchies < ActiveRecord::Migration[5.0]
+class CreateMatterHierarchies < ActiveRecord::Migration[5.1]
   def change
     create_table :matter_hierarchies, id: false do |t|
       t.integer :ancestor_id, null: false

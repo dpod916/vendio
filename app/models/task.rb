@@ -1,4 +1,4 @@
-class Task < ApplicationRecord
+class Task < SecondBase::Base
   belongs_to :taskable, polymorphic: true
   include Item
 

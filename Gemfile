@@ -69,6 +69,11 @@ gem "devise_ldap_authenticatable"
 
 gem 'mail'
 gem 'linguistics'
+gem 'delayed_job'
+# gem 'country_state_select'
+gem 'geokit-rails'
+gem 'secondbase'
+gem 'google_places'
 
 # gem 'railroad'
 

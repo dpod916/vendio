@@ -14,8 +14,8 @@ module NonUser
     #           :changes => Proc.new {|controller, model| model.changes.to_json}
     #       }
 
-    tracked owner: User.find(2644),
-            title: :name,
-            recipient: Matter.first
+    # tracked owner: User.find(2644),
+    #         title: :name,
+    #         recipient: Matter.first
    end
 end

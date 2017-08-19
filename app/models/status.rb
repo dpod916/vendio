@@ -1,2 +1,2 @@
-class Status < ApplicationRecord
+class Status < SecondBase::Base
 end

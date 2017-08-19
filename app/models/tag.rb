@@ -1,4 +1,4 @@
-class Tag < ApplicationRecord
+class Tag < SecondBase::Base
   has_many :taggings
 
   def self.tokens(query)

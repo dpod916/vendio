@@ -1,4 +1,4 @@
-class UserAssignment < ApplicationRecord
+class UserAssignment < SecondBase::Base
   # validates :user, uniqueness: { scope: :assignable }
   ROLE_ORDERS = ['"Owner"', '"Admin"', '"Participant"', '"Contact"', '"Reviewer"']
 

@@ -1,4 +1,4 @@
-class VendorAgreement < ApplicationRecord
+class VendorAgreement < SecondBase::Base
   belongs_to :vendor, optional: true
   belongs_to :company, optional: true
   belongs_to :agreement, optional: true

@@ -4,6 +4,14 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :authenticate_user!
   before_action :configure_permitted_parameters, if: :devise_controller?
+  around_action :query_cache_secondBase
+
+
+private
+
+  def query_cache_secondBase
+    SecondBase::Base.connection.cache { yield }
+  end
   # before_filter :set_current_user
 
 protected

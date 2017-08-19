@@ -1,4 +1,4 @@
-class Location < ApplicationRecord
+class Location < SecondBase::Base
     has_many :offices
     has_many :users, through: :offices
     has_many :companies, through: :users

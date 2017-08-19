@@ -1,2 +1,2 @@
-class Priority < ApplicationRecord
+class Priority < SecondBase::Base
 end

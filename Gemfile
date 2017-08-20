@@ -6,7 +6,10 @@ gem 'rails'
 gem 'pg'
 
 gem 'activerecord'
-gem 'acts_as_follower', github: 'tcocca/acts_as_follower', branch: 'master'
+# gem 'acts_as_follower', github: 'tcocca/acts_as_follower', branch: 'master'
+
+gem 'acts_as_follower'
+
 gem 'acts_as_list'
 gem 'opinions'
 
@@ -106,11 +109,11 @@ end
 
 group :development, :test do
   # # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  # gem 'byebug', :require => nil, platform: :mri
+  gem 'byebug', :require => nil, platform: :mri
   gem 'sqlite3', :require => nil, platform: :mri
-  # gem 'populator'
-  # gem 'faker'
-  # gem 'betterlorem'
+  gem 'populator'
+  gem 'faker'
+  gem 'betterlorem'
 end
 
 group :development do
@@ -124,11 +127,11 @@ group :development do
   gem 'coffee-script-source', '1.8.0'
   gem "better_errors"
   gem 'rails_db', :require => nil
-  # gem "simple-spreadsheet"
+  gem "simple-spreadsheet"
 end
 
 group :production do
-	gem 'activerecord-jdbcpostgresql-adapter', platform: :jruby
+	# gem 'activerecord-jdbcpostgresql-adapter', platform: :jruby
 	gem 'activerecord-oracle_enhanced-adapter', platform: :jruby
 end
 

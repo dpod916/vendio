@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Vendio" uuid="30c6efa1-85dd-45b3-a129-dc9f74ce8015">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>vendio</user-name>
+      <introspection-schemas>vendio:public</introspection-schemas>
+    </data-source>
+    <data-source name="Shared DB" uuid="b939bc3c-3801-42ee-9432-cf1dbee5f3e4">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>bunge</user-name>
+      <introspection-schemas>shared:public</introspection-schemas>
+    </data-source>
+    <data-source name="Rails vendio: test" uuid="e87e127e-724d-499c-8887-3a64861311b9">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
+  </component>
+</project>

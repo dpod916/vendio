@@ -12,12 +12,16 @@ default: &default
 
 development:
   <<: *default
-  database: contractually
+  database: vendio
+  host: vendio-dev.cirjgw1iubqm.us-west-2.rds.amazonaws.com
+  username: vendio
+  port: 5432
+  password: DRkmvj0T96next
 
 test:
   <<: *default
   adapter: sqlite3
-  database: contractually_test
+  database: vendio_test
 
 secondbase:
   development:

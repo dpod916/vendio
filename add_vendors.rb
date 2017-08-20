@@ -1,108 +1,40 @@
-load '~/workspace/config/environment.rb'
+load 'config/environment.rb'
 Rails.application.eager_load!
-@names = [  "Akshay Software International, Inc.", 
-            "Alden Associates & Consulting, Inc", 
-            "Alden Personnel, Inc.", 
-            "Arago Consulting", 
-            "Avaisys Consulting PTE LTD", 
-            "Axion Worldwide, LLC", 
-            "Ayers Group, The", 
-            "Best Writers / Sid Falthzik", 
-            "Bist Consulting Co.", 
-            "BSA", 
-            "Burton Group", 
-            "Calpion Inc.", 
-            "Camo Technologies, Inc.", 
-            "Career Techniques, Inc.", 
-            "CEI", 
-            "Celeris Solutions Group", 
-            "ClearPath Workforce Management, Inc.", 
-            "Clerysys Incorporated", 
-            "Cobalt Wave Technology, LLC,", 
-            "Confirmatics Inc", 
-            "CSI ", 
-            "Custom Satffing, Inc", 
-            "Daugherty", 
-            "DomaniTech, Inc.", 
-            "Domingos E Goncalves Solucoes EM INFORMATICA LTDA", 
-            "DTN Market Access", 
-            "e-Core Desenvolvimento de Software", 
-            "eCore IT Solutions, LLC", 
-            "EcoSys Management LLC", 
-            "Egar Technology, Inc.", 
-            "Emassi Inc.", 
-            "Eunomia M&M S.A", 
-            "Eurospher Tecnologia da Informação Ltda.", 
-            "FH Consulting GmbH", 
-            "FI & CO Finance & Controlling AG", 
-            "Forstar Resources LTD", 
-            "Forum Personnel Inc.", 
-            "GreenBee LTD", 
-            "Helios & Matheson North America Inc.", 
-            "Hyatt Leader LTD", 
-            "IBI ", 
-            "Idexcel - iTech Consuling Group, Inc. ", 
-            "IDS Scheer", 
-            "Infosys Technologies Limited", 
-            "Ishi Systems Inc.", 
-            "iSolve Services  Private Limited", 
-            "IT Happens KFT ", 
-            "iTech Solutions, Inc.", 
-            "Joel H Friedman", 
-            "K-2 Partners", 
-            "Kennedy / De Almeida, LLC", 
-            "L&T ", 
-            "Lancaster Systems, Inc.", 
-            "LCI ", 
-            "Leading Edge Communications Corp.", 
-            "Lekha, Inc.", 
-            "Letse", 
-            "Lloyd's Register - Fairplay", 
-            "Masfin Consulting, Inc", 
-            "Moakley Consulting Solutions, LLC", 
-            "NEC Solutions , Inc.", 
-            "Neoris", 
-            "New Aspects of Software", 
-            "Perficient, Inc.", 
-            "Peter Mancuso", 
-            "Portland Resourcing Limited", 
-            "Project One, Inc.", 
-            "PWC ", 
-            "Recruit 121 Limited", 
-            "Savitar Consulting, LLC", 
-            "Semafor Technologies", 
-            "Servicon", 
-            "SGA ", 
-            "Silversearch, Inc.", 
-            "SMB Services LLC", 
-            "Softworld, Inc.", 
-            "Sogeti USA LLC", 
-            "Sovereign Technologies", 
-            "Spock Advisors  LLC", 
-            "Spring Lake Consulting, LLC", 
-            "SQS ", 
-            "SQS North Amercia, LLC", 
-            "Stefanini International Corp.", 
-            "Stockell Information Systems, Inc.", 
-            "Syncro Technologies", 
-            "The Churchill Benefit Corporation ", 
-            "Tibco", 
-            "Titan Technology Partners, Limited", 
-            "Treasury & Trade", 
-            "TSR Consulting Services, Inc.", 
-            "Vision Systems Group", 
-            "Wan Zhang", 
-            "William Swisher", 
-            "WNAF Corporation", 
-            "York Solutions" ]
+@names = [  "Cognizant Technology Solutions",
+            "Consensys Limited",
+            "CoppClark Professional",
+            "Cunningham Trading Systems",
+            "Descartes Systems (USA) LLC (fmly MK Technology Data LLC)",
+            "Fidessa Corporation",
+            "FinancialCad Corporation",
+            "Gartner, Inc.",
+            "HP (Hewlett Packard)",
+            "IBI (Information Builders, Inc)",
+            "IDS Scheer",
+            "IRR (Industrial Info Resoruces, Inc.)",
+            "L&T (Larsen & Toubro Infotech Limited)",
+            "LIM (Logical Information Machine)",
+            "MathWorks",
+            "Mercury Interactive",
+            "MK Technology Data LLC",
+            "New Aspects of Software",
+            "Oracle America, Inc.",
+            "Parasoft",
+            "Perficient, Inc.",
+            "Reuters America LLC",
+            "RTS (Realtime Systems Inc.)",
+            "SS&C Technologies",
+            "SunGard Futures Systems",
+            "Sungard Kiodex, Inc.",
+            "Tableau Software, Inc.",
+            "Tibco"]
+
 
 
 # @client = GooglePlaces::Client.new('AIzaSyBRY9xz4uez74AomduySEPtnLfgxhe0alo')
 @client = GooglePlaces::Client.new('AIzaSyCbwWx2hATlPtAHnKOAJXZ0vmhcA-t30Z0')
-
-
 @names.each do |v|
-    vend = Vendor.where(legal_name: v).first 
+    vend = Vendor.where(legal_name: v).first
     if vend.nil?
         vendor = Vendor.new
         vendor.legal_name = v
@@ -119,8 +51,10 @@ Rails.application.eager_load!
         vendor.name = v if vendor.name.nil?
         vendor.save
         puts vendor.name
-        puts vendor.phone 
-        puts vendor.full_address 
-        puts vendor.website 
+        puts vendor.phone
+        puts vendor.full_address
+        puts vendor.website
     end
 end
+
+

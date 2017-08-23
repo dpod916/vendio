@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 30190903160855) do
+ActiveRecord::Schema.define(version: 30190903160856) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -87,6 +87,14 @@ ActiveRecord::Schema.define(version: 30190903160855) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "tax_id"
+    t.float "company_number"
+    t.string "method_of_combination"
+    t.string "reported_as"
+    t.string "functional_currency"
+    t.string "hfm_entity_code"
+    t.string "hfm_tax_entity"
+    t.string "hfm_hv_code"
+    t.string "lei"
   end
 
   create_table "company_hierarchies", id: false, force: :cascade do |t|

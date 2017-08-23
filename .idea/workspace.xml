@@ -7,103 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ce382be-bcf6-4d58-b2d9-a3a61d398287" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/add_data.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/get_skills.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hehe" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/work_orders/_details.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/work_orders/_sorted_work_orders.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/work_orders/_work_orders.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20160822174954_create_users.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20160822180422_create_operating_companies.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20160822180439_create_segments.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20160822180502_create_business_units.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20160822199401_create_locations.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20160901182131_create_statuses.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20160901182132_create_priorities.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20160906181002_create_regulators.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20160908183645_create_offices.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20161004184448_create_divisions.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20161004184544_create_departments.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20161004193318_create_profit_centers.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20161004195243_create_functions.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20161122032750_create_matters.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20161122063232_create_attachments.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20161122070129_create_tags.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20161122070446_create_taggings.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20161210212340_create_tasks.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20161222011804_create_severities.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20161222012015_create_issues.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170228083053_add_devise_two_factor_to_users.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170303161113_create_comments.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170303161114_create_comment_hierarchies.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170308224235_create_activities.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170309001851_create_activity_notification_tables.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170317143154_create_user_hierarchies.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170317143340_create_matter_hierarchies.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170331180129_create_external_companies.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170404170548_create_reminders.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170405141400_create_rule_books.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170504105723_create_profiles.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170530170754_create_friendships.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170616182201_create_mailboxer.mailboxer_engine.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170616182202_add_conversation_optout.mailboxer_engine.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170616182203_add_missing_indices.mailboxer_engine.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170616182204_add_delivery_tracking_info_to_mailboxer_receipts.mailboxer_engine.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170625153642_acts_as_follower_migration.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170629021047_create_user_assignments.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170629160855_create_employee_profiles.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170701051355_add_devise_to_users.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/20170816161259_create_companies.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30170317143018_create_company_hierarchies.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30170317143020_create_external_company_hierarchies.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160820_rolify_create_roles.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160821_add_relations_to_users.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160822_add_parent_id_to_matters.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160823_add_title_to_activities.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160824_add_status_to_tasks.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160825_add_status_to_issues.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160826_add_user_to_attachment.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160827_add_tax_id_to_companies.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160828_create_posts.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160829_create_job_titles.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160835_add_name_to_job_title.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160836_add_division_to_business_unit.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160839_add_name_to_user.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160840_add_reviewable_to_matter.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160841_add_direction_to_user_assignment.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160845_create_todo_lists.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160846_create_todo_items.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160847_add_unique_index_to_user_assignment.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/secondbase/migrate/30190903160852_add_description_to_task.rb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/agreements/work_order.rb" afterPath="$PROJECT_DIR$/app/models/work_order.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/30c6efa1-85dd-45b3-a129-dc9f74ce8015.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/30c6efa1-85dd-45b3-a129-dc9f74ce8015.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/b939bc3c-3801-42ee-9432-cf1dbee5f3e4.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/b939bc3c-3801-42ee-9432-cf1dbee5f3e4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vendio.iml" afterPath="$PROJECT_DIR$/.idea/vendio.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/work_orders.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/work_orders.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/work_orders.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/work_orders.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/work_orders_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/work_orders_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/work_orders_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/work_orders_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_data.rb" afterPath="$PROJECT_DIR$/add_data.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_vendors.rb" afterPath="$PROJECT_DIR$/add_vendors.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/agreements/agreement.rb" afterPath="$PROJECT_DIR$/app/models/agreements/agreement.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/agreements/consulting_agreement.rb" afterPath="$PROJECT_DIR$/app/models/agreements/consulting_agreement.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/agreements/subscription_agreement.rb" afterPath="$PROJECT_DIR$/app/models/agreements/subscription_agreement.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/company.rb" afterPath="$PROJECT_DIR$/app/models/company.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/consultant.rb" afterPath="$PROJECT_DIR$/app/models/consultant.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/work_orders/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/work_orders/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/work_orders/_work_order.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/work_orders/_work_order.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/work_orders/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/work_orders/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/work_orders/index.html.erb" afterPath="$PROJECT_DIR$/app/views/work_orders/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/work_orders/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/work_orders/index.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/work_orders/new.html.erb" afterPath="$PROJECT_DIR$/app/views/work_orders/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/work_orders/show.html.erb" afterPath="$PROJECT_DIR$/app/views/work_orders/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/work_orders/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/work_orders/show.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/secondbase/schema.rb" afterPath="$PROJECT_DIR$/db/secondbase/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/work_orders_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/work_orders_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/work_orders.yml" afterPath="$PROJECT_DIR$/test/fixtures/work_orders.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/work_order_test.rb" afterPath="$PROJECT_DIR$/test/models/work_order_test.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -117,6 +33,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" flattened_view="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/vendio@add_vendors.coverage" NAME="add_vendors Coverage Results" MODIFIED="1503179793638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vendio" />
   </component>
@@ -129,6 +46,28 @@
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
     <expand>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="Shared DB" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="Shared DB" type="e3449647:DbNodeDescriptor" />
+        <item name="shared" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="Shared DB" type="e3449647:DbNodeDescriptor" />
+        <item name="shared" type="e3449647:DbNodeDescriptor" />
+        <item name="public" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="Shared DB" type="e3449647:DbNodeDescriptor" />
+        <item name="shared" type="e3449647:DbNodeDescriptor" />
+        <item name="public" type="e3449647:DbNodeDescriptor" />
+        <item name="" type="fce03ad6:DatabaseStructure$GroupNode" />
+      </path>
       <path>
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
         <item name="Vendio" type="e3449647:DbNodeDescriptor" />
@@ -168,91 +107,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="20170822231703_create_terms.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20170822231703_create_terms.rb">
+      <file leaf-file-name="20170823060036_add_type_to_agreements.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20170823060036_add_type_to_agreements.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="47" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20170822233407_create_rates.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20170822233407_create_rates.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="get_skills.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/get_skills.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="32" column="3" lean-forward="false" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/database.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="92" column="10" lean-forward="false" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_data.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="add_data.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/add_data.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="29" />
+            <state relative-caret-position="311">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="company.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/company.rb">
+      <file leaf-file-name="application_record.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <file leaf-file-name="consulting_agreement.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/agreements/consulting_agreement.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20170822231745_create_work_orders.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20170822231745_create_work_orders.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -268,6 +157,10 @@
       <find />
       <find>&lt;img src=&quot;</find>
       <find>&gt;&lt;.+</find>
+      <find>location</find>
+      <find>model.constantize.classify.latitude</find>
+      <find>model.constantize.classify</find>
+      <find>link_</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -277,12 +170,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/add_vendors.rb" />
         <option value="$PROJECT_DIR$/hehe" />
-        <option value="$PROJECT_DIR$/add_data.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170822230303_remove_vendor_from_consultants.rb" />
         <option value="$PROJECT_DIR$/app/models/resourceable_resource.rb" />
-        <option value="$PROJECT_DIR$/app/models/consultant.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170822232600_create_resourceable_resources.rb" />
         <option value="$PROJECT_DIR$/app/models/work_order.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170822233407_create_rates.rb" />
@@ -291,6 +181,18 @@
         <option value="$PROJECT_DIR$/db/migrate/20170822231745_create_work_orders.rb" />
         <option value="$PROJECT_DIR$/get_skills.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/db/migrate/20170625205818_create_consultants.rb" />
+        <option value="$PROJECT_DIR$/app/models/consultant.rb" />
+        <option value="$PROJECT_DIR$/add_vendors.rb" />
+        <option value="$PROJECT_DIR$/app/models/application_record.rb" />
+        <option value="$USER_HOME$/hub/Gemfile" />
+        <option value="$USER_HOME$/hub/app/models/link_preview.rb" />
+        <option value="$USER_HOME$/hub/db/migrate/30190903160856_add_fields_to_companies.rb" />
+        <option value="$PROJECT_DIR$/app/models/company.rb" />
+        <option value="$PROJECT_DIR$/app/models/agreements/subscription_agreement.rb" />
+        <option value="$PROJECT_DIR$/app/models/agreements/consulting_agreement.rb" />
+        <option value="$PROJECT_DIR$/app/models/agreements/agreement.rb" />
+        <option value="$PROJECT_DIR$/add_data.rb" />
       </list>
     </option>
   </component>
@@ -313,7 +215,7 @@
     <option name="width" value="1705" />
     <option name="height" value="1001" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -349,29 +251,12 @@
               <item name="vendio" type="b2602c69:ProjectViewProjectNode" />
               <item name="vendio" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vendio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vendio" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vendio" type="b2602c69:ProjectViewProjectNode" />
               <item name="vendio" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vendio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vendio" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="migrate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vendio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vendio" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="secondbase" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -381,12 +266,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="terminal" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+    <property name="last_opened_file_path" value="$USER_HOME$/hub" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="project.settings.patched" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -530,12 +416,12 @@
       <workItem from="1503359667628" duration="253000" />
       <workItem from="1503360480641" duration="5913000" />
       <workItem from="1503440233679" duration="9727000" />
-      <workItem from="1503453393662" duration="7913000" />
+      <workItem from="1503453393662" duration="14344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29206000" />
+    <option name="totallyTimeSpent" value="35637000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -630,298 +516,12 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bin/rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/vendor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/a472e7e0/30c6efa1-85dd-45b3-a129-dc9f74ce8015/vendio.public.vendors" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/30c6efa1-85dd-45b3-a129-dc9f74ce8015/console.sql" />
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/bootstrap-markdown/bootstrap-markdown.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/7940b1f/b939bc3c-3801-42ee-9432-cf1dbee5f3e4/shared.public.divisions">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/7940b1f/b939bc3c-3801-42ee-9432-cf1dbee5f3e4/shared.public.locations">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/7940b1f/b939bc3c-3801-42ee-9432-cf1dbee5f3e4/shared.public.departments">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/7940b1f/b939bc3c-3801-42ee-9432-cf1dbee5f3e4/shared.public.employees">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/7940b1f/30c6efa1-85dd-45b3-a129-dc9f74ce8015/vendio.public.agreements">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hehe">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_vendors.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6289">
-          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170625205818_create_consultants.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170816173736_add_phone_and_website_to_vendors.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="42" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/agreement_party.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/attachment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/follow.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/issue.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/location.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/priority.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/role.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/severity.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/status.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/tag.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/tagging.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/task.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user_assignment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170822230303_remove_vendor_from_consultants.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/matter.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/resourceable_resource.rb" />
-    <entry file="file://$PROJECT_DIR$/app/models/consultant.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20170822232600_create_resourceable_resources.rb" />
     <entry file="file://$PROJECT_DIR$/app/models/work_order.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170822231703_create_terms.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170822233407_create_rates.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/company.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -942,26 +542,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add_data.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="92" column="10" lean-forward="false" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_skills.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="32" column="3" lean-forward="false" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -975,8 +559,349 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="223">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_skills.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170822233407_create_rates.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170822231703_create_terms.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/secondbase/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2040">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170625205818_create_consultants.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/consultant.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/hub/locations.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/7940b1f/30c6efa1-85dd-45b3-a129-dc9f74ce8015/vendio.public.vendors">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/hub/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="2" selection-end-line="99" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/hub/db/migrate/30190903160855_add_google_fields_to_location.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/7940b1f/30c6efa1-85dd-45b3-a129-dc9f74ce8015/vendio.public.agreements">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/hub/db/migrate/30190903160856_add_fields_to_companies.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/hub/app/models/link_preview.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_vendors.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/company.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/7940b1f/b939bc3c-3801-42ee-9432-cf1dbee5f3e4/shared.public.companies">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/addendum.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/agreement_exhibit.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/annex.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/conversion_fee_agreement.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/insurance_certificate.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/license_services_agreement.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/master_agreement.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/purchase_order.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/services_agreement.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/software_license_agreement.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/software_schedule.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/statement_work.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/sub_agreement.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/subscription_agreement.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/vendor_agreement.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/address.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreement_party.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/agreement.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170823060036_add_type_to_agreements.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/agreements/consulting_agreement.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_data.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding />
         </state>
       </provider>

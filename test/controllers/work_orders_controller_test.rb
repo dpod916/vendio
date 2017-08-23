@@ -17,7 +17,7 @@ class WorkOrdersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create work_order" do
     assert_difference('WorkOrder.count') do
-      post work_orders_url, params: { work_order: {  } }
+      post work_orders_url, params: { work_order: { agreement_id: @work_order.agreement_id, company_id: @work_order.company_id, vendor_id: @work_order.vendor_id } }
     end
 
     assert_redirected_to work_order_url(WorkOrder.last)
@@ -34,7 +34,7 @@ class WorkOrdersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update work_order" do
-    patch work_order_url(@work_order), params: { work_order: {  } }
+    patch work_order_url(@work_order), params: { work_order: { agreement_id: @work_order.agreement_id, company_id: @work_order.company_id, vendor_id: @work_order.vendor_id } }
     assert_redirected_to work_order_url(@work_order)
   end
 

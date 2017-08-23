@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  resources :work_orders
   resources :companies
   resources :vendors
   #comfy_route :cms_admin, :path => '/admin'

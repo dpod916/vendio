@@ -1,39 +1,17 @@
+<%= simple_form_for(@work_order) do |f| %>
+  <%= f.error_notification %>
 
-   <%= simple_form_for([@agreement, work_order], html: { class: 'form-horrizontal'}) do |f| %>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-group">
-              <%= f.input :title, label:false, placeholder: "Enter the title for the Work Order" %>
-            </div>
-          </div>
-          
-        </div>
+  <div class="form-inputs">
 
-        <div class="row">
-         <div class="col-md-12">
-         	<div class="col-md-4">
-	  			<%= f.input :start_date, as: :date, html5: true, label: "Effective Date"  %>
-	  		</div>
-	  		<div class="col-md-4">
-	   			<%= f.input :due_date, as: :date, html5: true, label: "Expiration Date" %>
-	   		</div>
-         </div>
-        </div>
-      
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="form-group">
-              <%= f.input :description, placeholder: "Enter a description of the Work Order here....", label: false %>
-  
-            </div>
-          </div>
-        </div>
+    <%= f.association :vendor %>
 
-          <div class="form-group">
-            <%= f.button :submit,  "Save", class: 'btn btn-primary pull-right'%>
-          </div>
-    <% end %>
+    <%= f.association :company %>
 
+    <%= f.association :agreement %>
 
+  </div>
 
-            
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

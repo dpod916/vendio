@@ -22,5 +22,14 @@
     <data-source name="Rails vendio: test" uuid="e87e127e-724d-499c-8887-3a64861311b9">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
     </data-source>
+    <data-source name="Rails vendio: development" uuid="5eecaa72-3a43-4d53-86ac-dd3012a782a3">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>vendio</user-name>
+      <introspection-schemas>vendio:public</introspection-schemas>
+    </data-source>
   </component>
 </project>

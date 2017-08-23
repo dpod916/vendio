@@ -90,7 +90,7 @@ gem 'rolify'
 gem 'font-awesome-rails'
 gem 'truncate_html'
 #gem 'bootstrap_form'
-
+gem 'watir'
 gem 'verbs'
 gem 'paperclip'
 

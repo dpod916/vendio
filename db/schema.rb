@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170816173736) do
+ActiveRecord::Schema.define(version: 20170823030812) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,10 +31,36 @@ ActiveRecord::Schema.define(version: 20170816173736) do
     t.string "last_name"
     t.string "name"
     t.string "email"
-    t.integer "vendor_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["vendor_id"], name: "index_consultants_on_vendor_id"
+  end
+
+  create_table "rates", force: :cascade do |t|
+    t.float "amount"
+    t.string "per"
+    t.string "rateable_type"
+    t.bigint "rateable_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["rateable_type", "rateable_id"], name: "index_rates_on_rateable_type_and_rateable_id"
+  end
+
+  create_table "skills", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "terms", force: :cascade do |t|
+    t.date "start"
+    t.date "end"
+    t.string "termable_type"
+    t.bigint "termable_id"
+    t.integer "version"
+    t.boolean "active"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["termable_type", "termable_id"], name: "index_terms_on_termable_type_and_termable_id"
   end
 
   create_table "vendor_hierarchies", id: false, force: :cascade do |t|
@@ -59,4 +85,27 @@ ActiveRecord::Schema.define(version: 20170816173736) do
     t.string "website"
   end
 
+  create_table "work_order_consultants", force: :cascade do |t|
+    t.bigint "work_order_id"
+    t.bigint "consultant_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["consultant_id"], name: "index_work_order_consultants_on_consultant_id"
+    t.index ["work_order_id"], name: "index_work_order_consultants_on_work_order_id"
+  end
+
+  create_table "work_orders", force: :cascade do |t|
+    t.bigint "vendor_id"
+    t.integer "company_id"
+    t.bigint "agreement_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["agreement_id"], name: "index_work_orders_on_agreement_id"
+    t.index ["vendor_id"], name: "index_work_orders_on_vendor_id"
+  end
+
+  add_foreign_key "work_order_consultants", "consultants"
+  add_foreign_key "work_order_consultants", "work_orders"
+  add_foreign_key "work_orders", "agreements"
+  add_foreign_key "work_orders", "vendors"
 end

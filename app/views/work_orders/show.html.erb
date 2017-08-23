@@ -1,18 +1,19 @@
-<%= javascript_include_tag 'work_order.coffee' %> 
-<div class="row wrapper border-bottom white-bg page-heading">
-    <%= render partial: "partials/top_details", locals: {owner: @work_order} %>
-</div>
+<p id="notice"><%= notice %></p>
 
-<div class="row">
-    <%= render partial: "work_orders/details", locals: {owner: @work_order} %>
-</div>
+<p>
+  <strong>Vendor:</strong>
+  <%= @work_order.vendor %>
+</p>
 
-<div class="row m-t-sm">
-    <%= render partial: "partials/tabs", locals: {owner: @work_order} %>
-</div>
+<p>
+  <strong>Company:</strong>
+  <%= @work_order.company %>
+</p>
 
-</div>
-    <%= render partial: "partials/side_details", locals: {owner: @work_order} %>
-</div>
+<p>
+  <strong>Agreement:</strong>
+  <%= @work_order.agreement %>
+</p>
 
-<%= render partial: "partials/custom_js", locals: {owner: @work_order} %>
+<%= link_to 'Edit', edit_work_order_path(@work_order) %> |
+<%= link_to 'Back', work_orders_path %>
